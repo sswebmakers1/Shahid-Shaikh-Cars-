@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahid Shaikh Cars</title>
+    <style>
+        :root {
+            --primary-gold: #c5a059;
+            --dark-bg: #0f0f0f;
+            --card-bg: #1a1a1a;
+            --text-light: #f4f4f4;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1500&q=80');
+            background-size: cover;
+            background-position: center;
+            border-bottom: 3px solid var(--primary-gold);
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: var(--primary-gold);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .car-card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            border: 1px solid #333;
+        }
+
+        .car-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(197, 160, 89, 0.2);
+        }
+
+        .car-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .car-info {
+            padding: 20px;
+        }
+
+        .car-info h3 {
+            margin: 0 0 10px;
+            color: var(--primary-gold);
+            font-size: 1.5rem;
+        }
+
+        .car-info p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        .btn-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--primary-gold);
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn-link:hover {
+            background-color: #e6bc6a;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Shahid Shaikh Cars</h1>
+        <p>The Ultimate Collection of 2026's Finest Automobiles</p>
+    </header>
+
+    <div class="container">
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=500&q=80" alt="Porsche Taycan" class="car-image">
+            <div class="car-info">
+                <h3>Porsche Taycan</h3>
+                <p>The benchmark for electric driving dynamics, the 2026 Taycan offers unmatched precision and up to 912 hp in its Turbo S trim.</p>
+                <a href="https://www.porsche.com" class="btn-link" target="_blank">View Details</a>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?auto=format&fit=crop&w=500&q=80" alt="Lucid Air" class="car-image">
+            <div class="car-info">
+                <h3>Lucid Air</h3>
+                <p>The king of range. With luxury that rivals private jets, the Lucid Air continues to redefine the premium EV sedan market.</p>
+                <a href="https://www.lucidmotors.com" class="btn-link" target="_blank">View Details</a>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1632243193741-b308fd0f0427?auto=format&fit=crop&w=500&q=80" alt="Rolls-Royce Spectre" class="car-image">
+            <div class="car-info">
+                <h3>Rolls-Royce Spectre</h3>
+                <p>The first ultra-luxury electric super coupé. Silent, powerful, and an absolute statement of wealth and status.</p>
+                <a href="https://www.rolls-roycemotorcars.com" class="btn-link" target="_blank">View Details</a>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=500&q=80" alt="BMW i7" class="car-image">
+            <div class="car-info">
+                <h3>BMW i7</h3>
+                <p>BMW's flagship electric sedan featuring a massive 31.3-inch Theater Screen for rear passengers and executive comfort.</p>
+                <a href="https://www.bmw.com" class="btn-link" target="_blank">View Details</a>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1603584173870-7f394da67776?auto=format&fit=crop&w=500&q=80" alt="Audi e-tron GT" class="car-image">
+            <div class="car-info">
+                <h3>Audi RS e-tron GT</h3>
+                <p>Sharper styling and a meticulous cabin. The 2026 refresh delivers 0-100 km/h in under 3 seconds for the RS Performance.</p>
+                <a href="https://www.audi.com" class="btn-link" target="_blank">View Details</a>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=500&q=80" alt="Mercedes EQS" class="car-image">
+            <div class="car-info">
+                <h3>Mercedes-Benz EQS</h3>
+                <p>The pinnacle of electric Mercedes luxury, featuring the Hyperscreen and industry-leading aerodynamic efficiency.</p>
+                <a href="https://www.mercedes-benz.com" class="btn-link" target="_blank">View Details</a>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=500&q=80" alt="Tesla Model S Plaid" class="car-image">
+            <div class="car-info">
+                <h3>Tesla Model S Plaid</h3>
+                <p>Unmatched acceleration and the tech-heavy ecosystem that started the EV revolution. Speed remains its middle name.</p>
+                <a href="https://www.tesla.com" class="btn-link" target="_blank">View Details</a>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1609527791661-0f3f3388701a?auto=format&fit=crop&w=500&q=80" alt="Lotus Emeya" class="car-image">
+            <div class="car-info">
+                <h3>Lotus Emeya</h3>
+                <p>A hyper-GT with 905 hp. It blends Lotus's racing heritage with cutting-edge electric performance and aerodynamics.</p>
+                <a href="https://www.lotuscars.com" class="btn-link" target="_blank">View Details</a>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=500&q=80" alt="Ferrari 12Cilindri" class="car-image">
+            <div class="car-info">
+                <h3>Ferrari 12Cilindri</h3>
+                <p>A tribute to the naturally aspirated V12. This masterpiece combines retro-inspired design with modern Ferrari speed.</p>
+                <a href="https://www.ferrari.com" class="btn-link" target="_blank">View Details</a>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=500&q=80" alt="Lamborghini Revuelto" class="car-image">
+            <div class="car-info">
+                <h3>Lamborghini Revuelto</h3>
+                <p>The V12 hybrid plug-in that proves electrification can be visceral. It’s loud, fast, and unmistakably Lamborghini.</p>
+                <a href="https://www.lamborghini.com" class="btn-link" target="_blank">View Details</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Shahid Shaikh Cars - All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
